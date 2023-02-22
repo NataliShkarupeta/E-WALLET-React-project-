@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/E-WALLET-React-project-/static/css/main.a1539671.css",
-    "main.js": "/E-WALLET-React-project-/static/js/main.613e46a9.js",
+    "main.js": "/E-WALLET-React-project-/static/js/main.7cdaac5f.js",
     "static/css/691.20b127ae.chunk.css": "/E-WALLET-React-project-/static/css/691.20b127ae.chunk.css",
-    "static/js/691.241426ed.chunk.js": "/E-WALLET-React-project-/static/js/691.241426ed.chunk.js",
-    "static/js/231.bbaeb36b.chunk.js": "/E-WALLET-React-project-/static/js/231.bbaeb36b.chunk.js",
+    "static/js/691.419fd95d.chunk.js": "/E-WALLET-React-project-/static/js/691.419fd95d.chunk.js",
+    "static/js/231.096d3b6c.chunk.js": "/E-WALLET-React-project-/static/js/231.096d3b6c.chunk.js",
     "static/js/718.e925f410.chunk.js": "/E-WALLET-React-project-/static/js/718.e925f410.chunk.js",
     "static/js/413.b51095a0.chunk.js": "/E-WALLET-React-project-/static/js/413.b51095a0.chunk.js",
     "static/media/Circe Bold.otf": "/E-WALLET-React-project-/static/media/Circe Bold.f7a8e82475783e7e15d0.otf",
@@ -37,15 +37,15 @@
     "static/media/icons.svg": "/E-WALLET-React-project-/static/media/icons.75bd7eec1e3a8a4336a35d441431123c.svg",
     "index.html": "/E-WALLET-React-project-/index.html",
     "main.a1539671.css.map": "/E-WALLET-React-project-/static/css/main.a1539671.css.map",
-    "main.613e46a9.js.map": "/E-WALLET-React-project-/static/js/main.613e46a9.js.map",
+    "main.7cdaac5f.js.map": "/E-WALLET-React-project-/static/js/main.7cdaac5f.js.map",
     "691.20b127ae.chunk.css.map": "/E-WALLET-React-project-/static/css/691.20b127ae.chunk.css.map",
-    "691.241426ed.chunk.js.map": "/E-WALLET-React-project-/static/js/691.241426ed.chunk.js.map",
-    "231.bbaeb36b.chunk.js.map": "/E-WALLET-React-project-/static/js/231.bbaeb36b.chunk.js.map",
+    "691.419fd95d.chunk.js.map": "/E-WALLET-React-project-/static/js/691.419fd95d.chunk.js.map",
+    "231.096d3b6c.chunk.js.map": "/E-WALLET-React-project-/static/js/231.096d3b6c.chunk.js.map",
     "718.e925f410.chunk.js.map": "/E-WALLET-React-project-/static/js/718.e925f410.chunk.js.map",
     "413.b51095a0.chunk.js.map": "/E-WALLET-React-project-/static/js/413.b51095a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1539671.css",
-    "static/js/main.613e46a9.js"
+    "static/js/main.7cdaac5f.js"
   ]
 }
