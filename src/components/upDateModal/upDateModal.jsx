@@ -30,7 +30,6 @@ import PropTypes from 'prop-types';
 
 export const UpDateModal = ({ trans, close }) => {
   const findcategorie = useSelector(selectCategories);
-  console.log('trans ', trans);
   const [categoryId, setCategoryId] = useState(trans.categoryId);
   const [amount, setAmount] = useState(Math.abs(trans.amount));
   const [transactionDate, setTransactionDate] = useState(trans.transactionDate);

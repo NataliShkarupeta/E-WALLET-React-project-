@@ -21,7 +21,6 @@ import PropTypes from 'prop-types';
 
 
 export const Table = ({ data, handlePeriod }) => {
-  console.log(data)
   const isDataPerPeriod =
     !data?.expenseSummary === 0 || data?.categoriesSummary?.length > 0;
 

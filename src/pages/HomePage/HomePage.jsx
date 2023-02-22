@@ -19,9 +19,6 @@ const HomePage = () => {
   const isModalAddTransactionOpen = useSelector(selectAddTransactionOpen);
   const isModalUpDateTransaction = useSelector(selectUpDateTransactionsModal);
   const isModalConfirmations = useSelector(selectModalConfirmation);
-  console.log(isModalAddTransactionOpen);
-  console.log(isModalUpDateTransaction);
-  console.log(isModalConfirmations);
   const dispatch = useDispatch();
   const isTablet = useMedia('(min-width: 768px)');
 

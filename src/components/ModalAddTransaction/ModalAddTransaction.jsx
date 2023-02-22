@@ -82,10 +82,10 @@ export const ModalAddTransaction = () => {
     setChecked(e.target.checked);
   };
 
-  const date = new Date(
-    transactionDate.toString().replace(/(\d+).(\d+).(\d+)/, '$3/$2/$1')
-  );
-  console.log(date)
+  // const date = new Date(
+  //   transactionDate.toString().replace(/(\d+).(\d+).(\d+)/, '$3/$2/$1')
+  // );
+
 
   const categoriesFilter = categories.filter(cat => cat.name !== 'Income');
   const renderError = message => <Span>{message}</Span>;

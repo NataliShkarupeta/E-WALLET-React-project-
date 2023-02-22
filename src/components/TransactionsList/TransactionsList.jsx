@@ -63,8 +63,7 @@ export const TransactionsList = ({ data, info }) => {
 
   useEffect(() => {
     trans && info(trans);
-    setTrans('')
-    console.log(trans)
+    setTrans('');
   }, [dispatch, info, trans]);
 
   return (

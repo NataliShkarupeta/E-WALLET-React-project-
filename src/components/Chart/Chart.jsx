@@ -19,7 +19,6 @@ const options = {
 };
 
 export const ChartDoughnut = React.memo(({ data }) => {
-  console.log('Donut', data)
   const userBalance = useSelector(selectTotalBalance);
   const chartRef = useRef(null);
 
