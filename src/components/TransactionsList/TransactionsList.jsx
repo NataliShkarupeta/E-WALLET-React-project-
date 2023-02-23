@@ -39,7 +39,7 @@ import PropTypes from 'prop-types';
 
 export const TransactionsList = ({ data, info }) => {
   const isTablet = useMedia('(min-width: 768px)');
- 
+
   const categories = useSelector(selectCategories);
   const financeData = useSelector(selectFinanceData);
   const [trans, setTrans] = useState('');
@@ -48,7 +48,6 @@ export const TransactionsList = ({ data, info }) => {
   const saveTransaction = id => {
     setTrans(financeData.find(trans => trans.id === id));
     dispatch(openModalUpDateTransaction());
-    
   };
 
   const saveTransactionForDelete = id => {
@@ -69,7 +68,7 @@ export const TransactionsList = ({ data, info }) => {
   return (
     <>
       {!isTablet ? (
-        <>
+        <Container>
           {data.map(
             ({ id, transactionDate, type, categoryId, comment, amount }) => (
               <MobList key={id} type={type.toLowerCase()}>
@@ -94,9 +93,7 @@ export const TransactionsList = ({ data, info }) => {
                   <MobSum type={type.toLowerCase()}>{amount.toFixed(2)}</MobSum>
                 </MobItem>
                 <MobItem>
-                  <DelButton
-                    onClick={() => saveTransactionForDelete(id)}
-                  >
+                  <DelButton onClick={() => saveTransactionForDelete(id)}>
                     Delete
                   </DelButton>
                   <EditButton onClick={() => saveTransaction(id)}>
@@ -114,7 +111,7 @@ export const TransactionsList = ({ data, info }) => {
               </MobList>
             )
           )}
-        </>
+        </Container>
       ) : (
         //desctop
         <Container>
@@ -161,9 +158,7 @@ export const TransactionsList = ({ data, info }) => {
                       </EditButton>
                     </TdEdit>
                     <TdDel>
-                      <DelButton
-                        onClick={() => saveTransactionForDelete(id)}
-                      >
+                      <DelButton onClick={() => saveTransactionForDelete(id)}>
                         Delete
                       </DelButton>
                     </TdDel>
@@ -177,7 +172,6 @@ export const TransactionsList = ({ data, info }) => {
     </>
   );
 };
-
 
 TransactionsList.propTypes = {
   data: PropTypes.arrayOf(

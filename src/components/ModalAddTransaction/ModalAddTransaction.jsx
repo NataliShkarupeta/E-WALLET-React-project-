@@ -35,6 +35,9 @@ import { fetchCategories } from 'redux/categories/categoriesOperations';
 import { Formik, ErrorMessage } from 'formik';
 import { object, string, number, date } from 'yup';
 import Icons from 'images/icons.svg';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { selectErrorTransaction } from 'redux/transaction/transactionSelectors';
 
 const validationSchema = object().shape({
   transactionDate: date().required('Data is a required field'),
@@ -49,7 +52,9 @@ export const ModalAddTransaction = () => {
   const [transactionDate, setTransactionDate] = useState(new Date(Date.now()));
   const [checked, setChecked] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const error = useSelector(selectErrorTransaction);
 
+   console.log('in addTrans',error)
   const handleClick = e => {
     e.preventDefault();
     setIsOpen(!isOpen);
@@ -82,10 +87,6 @@ export const ModalAddTransaction = () => {
     setChecked(e.target.checked);
   };
 
-  // const date = new Date(
-  //   transactionDate.toString().replace(/(\d+).(\d+).(\d+)/, '$3/$2/$1')
-  // );
-
 
   const categoriesFilter = categories.filter(cat => cat.name !== 'Income');
   const renderError = message => <Span>{message}</Span>;
@@ -93,9 +94,12 @@ export const ModalAddTransaction = () => {
   return (
     <Overlay onClick={onOverlayClose}>
       <Modal>
-
-        <ModalButtonClose type="button" onClick={()=> {dispatch(closeModalAddTransaction());}}>
-
+        <ModalButtonClose
+          type="button"
+          onClick={() => {
+            dispatch(closeModalAddTransaction());
+          }}
+        >
           <IconContext.Provider value={{ size: '3em' }}>
             <IoCloseOutline />
           </IconContext.Provider>
@@ -108,7 +112,7 @@ export const ModalAddTransaction = () => {
             comment: '',
             type: '',
           }}
-          onSubmit={values => {
+          onSubmit={(values, { resetForm }) => {
             const currentCategorie = categories.find(
               cat => cat.name === values.categoryId
             );
@@ -127,6 +131,10 @@ export const ModalAddTransaction = () => {
                   : -Number(values.amount),
               })
             );
+            if (error) {
+              toast.error('Oops...something is wrong, try again!');
+            }
+            resetForm();
           }}
           validationSchema={validationSchema}
         >
@@ -140,7 +148,8 @@ export const ModalAddTransaction = () => {
             isSubmitting,
             setFieldValue,
           }) => (
-            <Form   onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit}>
+              <ToastContainer />
               <ModalTitle> Add transaction</ModalTitle>
 
               <Input
@@ -228,7 +237,12 @@ export const ModalAddTransaction = () => {
                 <ModalButtonAdd type="submit" disabled={isSubmitting}>
                   Add
                 </ModalButtonAdd>
-                <ModalButtonCancel type="button" onClick={()=>{dispatch(closeModalAddTransaction())}}>
+                <ModalButtonCancel
+                  type="button"
+                  onClick={() => {
+                    dispatch(closeModalAddTransaction());
+                  }}
+                >
                   Cancel
                 </ModalButtonCancel>
               </ModalButtonWrap>

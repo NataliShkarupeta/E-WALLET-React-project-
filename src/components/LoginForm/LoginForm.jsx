@@ -39,7 +39,7 @@ export const LoginForm = () => {
   const dispatch = useDispatch();
   const emailId = nanoid();
   const passwordId = nanoid();
-   const error = useSelector(selectErrorAuth);
+  const error = useSelector(selectErrorAuth);
 
   return (
     <Formik
