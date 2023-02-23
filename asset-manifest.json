@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/E-WALLET-React-project-/static/css/main.a1539671.css",
-    "main.js": "/E-WALLET-React-project-/static/js/main.7cdaac5f.js",
+    "main.js": "/E-WALLET-React-project-/static/js/main.2ba583f0.js",
     "static/css/691.20b127ae.chunk.css": "/E-WALLET-React-project-/static/css/691.20b127ae.chunk.css",
-    "static/js/691.419fd95d.chunk.js": "/E-WALLET-React-project-/static/js/691.419fd95d.chunk.js",
+    "static/js/691.e974014a.chunk.js": "/E-WALLET-React-project-/static/js/691.e974014a.chunk.js",
     "static/js/231.096d3b6c.chunk.js": "/E-WALLET-React-project-/static/js/231.096d3b6c.chunk.js",
     "static/js/718.e925f410.chunk.js": "/E-WALLET-React-project-/static/js/718.e925f410.chunk.js",
     "static/js/413.b51095a0.chunk.js": "/E-WALLET-React-project-/static/js/413.b51095a0.chunk.js",
@@ -37,15 +37,15 @@
     "static/media/icons.svg": "/E-WALLET-React-project-/static/media/icons.75bd7eec1e3a8a4336a35d441431123c.svg",
     "index.html": "/E-WALLET-React-project-/index.html",
     "main.a1539671.css.map": "/E-WALLET-React-project-/static/css/main.a1539671.css.map",
-    "main.7cdaac5f.js.map": "/E-WALLET-React-project-/static/js/main.7cdaac5f.js.map",
+    "main.2ba583f0.js.map": "/E-WALLET-React-project-/static/js/main.2ba583f0.js.map",
     "691.20b127ae.chunk.css.map": "/E-WALLET-React-project-/static/css/691.20b127ae.chunk.css.map",
-    "691.419fd95d.chunk.js.map": "/E-WALLET-React-project-/static/js/691.419fd95d.chunk.js.map",
+    "691.e974014a.chunk.js.map": "/E-WALLET-React-project-/static/js/691.e974014a.chunk.js.map",
     "231.096d3b6c.chunk.js.map": "/E-WALLET-React-project-/static/js/231.096d3b6c.chunk.js.map",
     "718.e925f410.chunk.js.map": "/E-WALLET-React-project-/static/js/718.e925f410.chunk.js.map",
     "413.b51095a0.chunk.js.map": "/E-WALLET-React-project-/static/js/413.b51095a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1539671.css",
-    "static/js/main.7cdaac5f.js"
+    "static/js/main.2ba583f0.js"
   ]
 }
